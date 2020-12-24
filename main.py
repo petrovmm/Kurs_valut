@@ -64,14 +64,14 @@ def parse():
 
 def get_currency():
     LineEditText = ui.lineEdit.text()
-    #return LineEditText
-    result = {
+    return LineEditText
+""""    result = {
     'Dollar' : print(get_content.kurs[0]),
     'Euro' : print(get_content.kurs[2]),
     }.get(LineEditText, None)()
     print(LineEditText,result)
  
-"""
+
 def show_currency():
     get_currency() = {
     'Dollar' : print(parser.kurs[0]),
