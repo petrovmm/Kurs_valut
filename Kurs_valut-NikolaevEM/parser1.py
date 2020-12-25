@@ -6,7 +6,7 @@ import csv
 def create_csv(data):
     columns=['date', 'value']
 
-    with open("data2.csv", mode="w", encoding='utf-8') as w_file:
+    with open("data3.csv", mode="w", encoding='utf-8') as w_file:
         file_writer = csv.writer(w_file, delimiter = ";", lineterminator="\r")
         for i in data:
             file_writer.writerow(i)
@@ -55,7 +55,7 @@ def parse(date):
     
 data = []
 days =[]
-days = pd.date_range('2020-8-25', '2020-12-25', freq='D')
+days = pd.date_range('2020-11-25', '2020-12-25', freq='D')
 
 i=0
 for day in days:

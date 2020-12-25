@@ -92,6 +92,9 @@ def anal(dataset1):
     plt.plot(scaler.inverse_transform(dataset1))
     plt.plot(trainPredictPlot)
     plt.plot(testPredictPlot)
+
+    pred=model.predict(testX)
+    print(pred[31][0])
     plt.show()
     
 
